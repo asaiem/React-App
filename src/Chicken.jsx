@@ -1,5 +1,6 @@
+import './Chicken.css'
 function Chicken(){
-    return <p> 'this is Chicken'</p>
+    return <p className="Chicken"> 'this is Chicken'</p>
 }
 
 export default Chicken;
