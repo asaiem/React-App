@@ -16,6 +16,7 @@ export default function ShoppingForm({addItem}){
         
         console.log(form)
         addItem(form)
+        setForm({product:'',qty:0})
 
      }
 
