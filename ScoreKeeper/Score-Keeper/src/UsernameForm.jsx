@@ -17,10 +17,12 @@ export default function UsernameForm(){
     }
     return(
 
-        <>
-            <input type="text" name="username" id=""  placeholder="First" value={firstName}
+        <>  
+            <label htmlFor="firstName">Enter your first name</label>
+            <input type="text" name="username" id="firstName"  placeholder="First" value={firstName}
             onChange={updateFirstName}/>
             <br />
+            <label htmlFor="secondName">Enter your last name </label>
             <input type="text" name="username" id=""  placeholder="second" value={secondName}
             onChange={updateSecondName}/>
             <button >Submit</button>
