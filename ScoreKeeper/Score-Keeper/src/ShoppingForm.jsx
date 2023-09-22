@@ -14,7 +14,7 @@ export default function ShoppingForm({addItem}){
      function handleSubmit(evt){
         evt.preventDefault()
         
-        console.log(form)
+        // console.log(form)
         addItem(form)
         setForm({product:'',qty:0})
 
@@ -23,17 +23,17 @@ export default function ShoppingForm({addItem}){
     return(
         <>
         <h1>Adding Product</h1>
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="product">Product:</label>
-            <input type="text" name="product" id="product" placeholder="Product" onChange={handleChange}/>
+            <form >
+                <label htmlFor="product">Product:</label>
+                <input type="text" name="product" id="product" placeholder="Product" onChange={handleChange} value={form.product}/>
 
-            <label htmlFor="qty">Quantity: </label>
-            <input type="number" name="qty" id="qty" placeholder="Qauntity" onChange={handleChange}/>
+                <label htmlFor="qty">Quantity: </label>
+                <input type="number" name="qty" id="qty" placeholder="Qauntity" onChange={handleChange} value={form.qty}/>
 
-            <button >Submit</button>
+                <button onClick={handleSubmit} >Submit</button>
 
 
-        </form>
+            </form>
         </>
 
     )

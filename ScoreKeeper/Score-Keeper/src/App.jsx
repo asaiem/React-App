@@ -6,12 +6,13 @@ import ScoreKeeper from './ScoreKeeper'
 import UsernameForm from './newUserForm'
 import ShoppingForm from './ShoppingForm'
 import ShoppingList from './ShoppingList'
-
+import ValidatedShoppingForm from'./ValidatedShoppingForm'
 function App() {
 
   return (
     <>
-      <ShoppingList/>
+      <ValidatedShoppingForm/>
+      {/* <ShoppingList/> */}
       {/* <ShoppingForm/> */}
       {/* <UsernameForm/> */}
       {/* <UsernameForm/> */}
